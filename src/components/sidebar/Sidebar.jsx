@@ -3,12 +3,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
-import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
-import InsertChartOutlinedTwoToneIcon from '@mui/icons-material/InsertChartOutlinedTwoTone';
-import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutlined';
-import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
-import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
-import AssignmentIndOutlinedIcon from '@mui/icons-material/AssignmentIndOutlined';
+
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import {Link} from 'react-router-dom'
 import {useContext} from 'react'
@@ -40,43 +35,18 @@ const Sidebar = () => {
                         <span>Users</span>
                     </li>
                 </Link>
-                <Link to="/products" style={{textDecoration: 'none'}}>
+                <Link to="/hotels" style={{textDecoration: 'none'}}>
                     <li>
                         <Inventory2OutlinedIcon className="icon"/>
-                        <span>Products</span>
+                        <span>Hotels</span>
                     </li>
                 </Link>
+                <Link to="/rooms" style={{textDecoration: 'none'}}>
                 <li>
                     <ArticleOutlinedIcon className="icon"/>
-                    <span>Orders</span>
+                    <span>Rooms</span>
                 </li>
-                <li>
-                    <LocalShippingOutlinedIcon className="icon"/>
-                    <span>Delivery</span>
-                </li>
-                <p className="title">USEFUL</p>
-                <li>
-                    <InsertChartOutlinedTwoToneIcon className="icon"/>
-                    <span>Stats</span>
-                </li>
-                <p className="title">SERVICE</p>
-                <li>
-                    <HealthAndSafetyOutlinedIcon className="icon"/>
-                    <span>System Health</span>
-                </li>
-                <li>
-                    <AssignmentOutlinedIcon className="icon"/>
-                    <span>Logs</span>
-                </li>
-                <li>
-                    <SettingsSuggestOutlinedIcon className="icon"/>
-                    <span>Settings</span>
-                </li>
-                <p className="title">USER</p>
-                <li>
-                    <AssignmentIndOutlinedIcon className="icon"/>
-                    <span>Profile</span>
-                </li>
+                </Link>
                 <li>
                     <LogoutOutlinedIcon className="icon"/>
                     <span>Logout</span>
